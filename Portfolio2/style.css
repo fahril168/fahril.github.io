@@ -1,0 +1,628 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font: rgb(77, 77, 77);
+    --accent: #0078FF;
+    --empty: #EDEDED;
+    --shadow: rgb(218, 218, 218);
+}
+
+body{
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    height: 4900px;
+}
+
+/* NAVBAR-START */
+.container-navbar{
+    text-align: end;
+    position: fixed;
+    width: 100vw;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    height: 5rem;
+}
+
+.container-navbar img{
+    margin-top: -29px;
+    margin-left: 1rem;
+    position: absolute;
+    display: flex;
+    height: 5rem;
+}
+
+.container-list{
+    margin-right: 5rem;
+}
+
+.container-navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 1rem;
+}
+
+.container-navbar a:hover{
+    color: var(--accent)
+}
+/* NAVBAR-END */
+
+/* HERO START */
+.container-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    background-image: url(assets/img/wm.png);
+    background-size: 100%;
+}
+
+.name{
+    color: white;
+    font-size: 80px;
+}
+
+.name::after{
+}
+/* HERO END */
+
+/* ABOUT START */
+.container-about{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 300px auto 40vw;
+    grid-template-rows: 300px auto;
+    background-color: white;
+    margin: 70px 100px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
+    height: 540px;
+}
+
+.container-about img{
+    height: 280px;
+    width: 280px;
+}
+
+.skill{
+    margin: 0px 0px;
+    grid-column: span 2;
+}
+
+.skills{
+    line-height: 40px;
+    list-style: none;
+    color: rgb(77, 77, 77);
+    font-size: 15px;
+}
+
+/* skill-lines start*/
+.skill-line1{
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent) 80%, var(--empty) 80%, var(--empty) 100%);
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-right: 2rem;
+    height: 8px;
+}
+
+.skill-line2{
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent) 70%, var(--empty) 70%, var(--empty) 100%);
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-right: 2rem;
+    height: 8px;
+}
+
+.skill-line3{
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent) 55%, var(--empty) 55%, var(--empty) 100%);
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-right: 2rem;
+    height: 8px;
+}
+
+.skill-line4{
+    background: linear-gradient(to right, var(--accent) 0%, var(--accent) 40%, var(--empty) 40%, var(--empty) 100%);
+    margin-top: -5px;
+    margin-bottom: 5px;
+    margin-right: 2rem;
+    height: 8px;
+}
+/* skill-lines end */
+
+.profile li{
+    list-style-type: none;
+    line-height: 50px;
+    color: var(--font);
+}
+
+.aboutme p{
+    font-size: 18px;
+    line-height: 28px;
+    grid-row: span 2;
+    color: var(--font)
+}
+
+.about-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-top: 5px;
+}
+
+.p1{
+    margin-top: 1rem;
+}
+
+.p2{
+    margin-top: 1rem;
+}
+/* ABOUT END */
+
+/* RESUME START */
+.container-resume{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    line-height: 28px;
+    /* column-gap: 10rem; */
+}
+
+.container-resume2{
+    margin: 50px 100px;
+    line-height: 28px;
+}
+
+.resume{
+    grid-column: span 2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    line-height: 5rem;
+}
+
+.resume-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-left: 128px;
+}
+
+.resume h2{
+    font-size: 30px;
+}
+
+.education{
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+
+.education h2{
+    margin-bottom: 1rem;
+}
+
+.education span{
+    margin: 10px;
+}
+
+.education p,li,h3,br,span{
+    color: var(--font);
+}
+
+.education h3{
+    margin-top: 1rem;
+}
+
+/* experience */
+
+.experience{
+    margin-right: 8rem;
+    margin-left: 4rem;
+}
+
+.experience h2{
+    margin-bottom: 1rem;
+}
+
+.experience h3{
+    margin-top: 1rem;
+}
+
+.experience span{
+    margin: 10px;
+}
+
+.experience p,li,h3,br,span{
+    color: var(--font);
+}
+/* RESUME END */
+
+/* SERVICES START */
+.container-services{
+    gap: 50px;
+    line-height: 28px;
+}
+
+.container-services2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.services{
+    margin: 50px 100px;
+    line-height: 5rem;
+}
+
+.services h2{
+    font-size: 30px;
+}
+
+.services-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-left: 128px;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: auto auto;
+    gap: 25px;
+    margin: 0px 120px;
+}
+
+.container-card1, .container-card2, .container-card3{
+    background-color: white;
+    height:300px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgb(232, 232, 232);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 5rem;
+}
+
+.container-card1:hover, .container-card2:hover, .container-card3:hover{
+    /* box-shadow: 0px 0px 25px #0077ff5a; */
+    color: var(--accent);
+    margin-top: -10px;
+    margin-left: 10px;
+    box-shadow: -10px 10px 0px var(--accent);
+}
+
+.services1, .services2, .services3{
+    margin: 2rem;
+}
+
+
+.services1 img, .services2 img, .services3 img{
+    height: 70px;
+    width: 70px;
+}
+
+.services1 h2, .services2 h2, .services3 h2{
+    margin-top: 1rem;
+}
+
+.services1 p, .services2 p, .services3 p{
+    margin-top: 1rem;
+    color: var(--font);
+}
+
+/* SERVICES END */
+
+/* PORTFOLIO START */
+.container-portfolio{
+
+}
+
+.container-portfolio2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.portfolio-title{
+    margin: 20px 100px;
+    line-height: 5rem;
+}
+
+.portfolio-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-left: 8rem;
+}
+
+.portfolio-title h2{
+    font-size: 30px;
+}
+
+.portfolio-title p{
+    color: var(--font);
+}
+
+/* portfolio nav */
+.portfolio-nav{
+    text-align: center;
+    margin: 1rem;
+}
+
+.portfolio-nav a{
+    margin: 10px;
+    color: var(--font);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.portfolio-nav a:hover{
+    color: var(--accent);
+}
+/* portfolio nav */
+
+/* portfolio cards */
+.container-portfolio-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin: 0px 7rem;
+}
+
+.portfolio-card1, .portfolio-card2, .portfolio-card3{
+    background-color: darkgray; 
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-card1 h2, .portfolio-card2 h2, .portfolio-card3 h2{
+    margin-top: 130px;
+    color: lightgray;
+}
+/* portfolio cards end */
+
+/* PORTFOLIO END */
+
+/* PRICING START */
+.container-pricing{
+
+}
+
+/* pricing title */
+.container-pricing2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.pricing-title{
+    margin: 20px 100px;
+    line-height: 5rem;
+}
+
+.pricing-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-left: 8rem;
+}
+
+.pricing-title h2{
+    font-size: 30px;
+}
+
+.pricing-title p{
+    color: var(--font);
+}
+/* pricing title */
+
+/* price */
+.container-price{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: 0px 150px;
+    gap: 100px;
+}
+
+.container-price-left, .container-price-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    row-gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.container-price-left h3, .container-price-right h3{
+    text-align: start;
+    color: black;
+    border-bottom: 1px dotted grey;
+    padding-bottom: 10px;
+}
+
+.container-price-left h4, .container-price-right h4{
+    text-align: end;
+    color: var(--accent);
+    border-bottom: 1px dotted grey;
+    
+}
+/* price */
+
+/* PRICING END */
+
+
+/* CONTACT START */
+
+/* contact title */
+.container-contact2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-title{
+    margin: 20px 100px;
+    line-height: 5rem;
+}
+
+.contact-line1{
+    background-color: var(--accent);
+    height: 3px;
+    width: 50px;
+    margin-left: 8rem;
+}
+
+.contact-title h2{
+    font-size: 30px;
+}
+
+.contact-title p{
+    color: var(--font);
+}
+/* contact title */
+
+.container-contact-main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+    margin: 0px 100px;
+}
+
+.container-contact-address, .container-contact-message{
+    box-shadow: 0px 0px 20px rgb(218, 218, 218);
+}
+
+.container-contact-address{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    /* gap: 2rem; */
+}
+
+.address, .callus, .email{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 17% auto;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    text-align: left;
+}
+
+.address img, .callus img, .email img{
+    height: 56px;
+    grid-row: span 2;
+}
+
+.address h3, .callus h3, .email h3{
+    color: black;
+}
+
+.address p, .callus p, .email p{
+    color: var(--font);
+    font-size: 15px;
+}
+
+.address{
+    margin: 2rem 0rem 2rem 2rem;
+    
+}
+
+.callus{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.email{
+    margin: 2rem 2rem 2rem 0rem;
+}
+
+/* message */
+.container-contact-message{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+.container-message{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 2rem;
+    gap: 20px;
+}
+
+.container-message input{
+    padding-left: 1rem;
+    
+}
+
+.message input{
+    text-indent: 100px;
+}
+
+.your-name{
+    height: 3rem;
+}
+
+.your-email{
+    height: 3rem;
+}
+
+.subject{
+    grid-column: span 2;
+    height: 3rem;
+}
+
+.message{
+    grid-column: span 2;
+    padding-top: 1rem;
+    padding-bottom: 11rem;
+    margin-bottom: 2rem;
+}
+
+.container-button{
+    grid-column: span 2;
+    align-content: center;
+    position: relative;
+}
+
+.container-button2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container-button2 button:hover{
+    background-color: #2088ff;
+    cursor: pointer;
+}
+
+.send{
+    width: 180px;
+    height: 3rem;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 100px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+/* message */
+
+
+/* CONTACT END */
